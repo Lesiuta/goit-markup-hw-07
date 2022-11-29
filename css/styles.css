@@ -65,14 +65,7 @@ body {
     text-align: center;
     margin-bottom: 50px;
 }
-.page-header {
-    border-bottom: 1px solid #ECECEC;
-}
-.page-header__content {
-    display: flex;
-    align-items: center;
-}
-.page-header__logo {
+.logo {
     color: var(--black-color);
     text-decoration: var(--primary-text-decoration);
     font-family: "Raleway", "sans-serif";
@@ -80,8 +73,18 @@ body {
     font-size: 26px;
     line-height: 1.2;
 }
-.page-header__logo-web {
+.logo-web {
     color: var(--accent-color);
+}
+.logo-studio {
+    color: var(--secondary-text-color);
+}
+.page-header {
+    border-bottom: 1px solid #ECECEC;
+}
+.page-header__content {
+    display: flex;
+    align-items: center;
 }
 .site-nav {
     margin-left: 93px;
@@ -152,7 +155,7 @@ body {
 .hero {
     background-color: var(--secondary-background-color);
 }
-.hero .container {
+.hero__content {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -164,7 +167,7 @@ body {
     rgba(47, 48, 58, 0.4)),
     url(../images/image-hero.jpg);
 }
-.hero-title {
+.hero__title {
     width: 696px;
     color: var(--secondary-text-color);
     letter-spacing: 0.06em;
@@ -174,7 +177,7 @@ body {
     margin-bottom: 30px;
     
 }
-.hero-button {
+.hero__button {
     display: inline-block;
     padding: 10px 32px;
     border: transparent;
@@ -193,30 +196,30 @@ body {
     transition-duration: var(--time);
     transition-timing-function: var(--timing-function);
 }
-.hero-button:focus,
-.hero-button:hover {
+.hero__button:focus,
+.hero__button:hover {
     background-color: #188CE8;
 }
-.pluses-title {
+.pluses__title {
     color: var(--title-text-color);
     font-weight: 700;
     font-size: 14px;
     line-height: 1.1;
     margin-bottom: 10px;
 }
-.pluses-item {
+.pluses__item {
     width: 270px;
     border-radius: 4px;
 }
-.pluses-item:not(:last-child) {
+.pluses__item:not(:last-child) {
     margin-right: 30px;
 }
-.pluses-text {
+.pluses__text {
     color: var(--primary-text-color);
     font-size: 14px;
     line-height: 1.7;
 }
-.pluses-icon {
+.pluses__icon {
     text-align: center;
     width: 270px;
     height: 120px;
@@ -255,8 +258,7 @@ body {
 
 }
 .work-item .item:not(:last-child),
-.workers .item:not(:last-child),
-.clients-item:not(:last-child) {
+.workers .item:not(:last-child) {
     margin-right: 30px;
 }
 .team {
@@ -339,8 +341,11 @@ body {
 }
 .clients-item:hover,
 .clients-item:focus {
-    border: 1px solid var(--accent-color);}
-
+    border: 1px solid var(--accent-color);
+}
+.clients-item:not(:last-child) {
+    margin-right: 30px;
+}
 .items-content .item:not(:last-child) {
     margin-right: 8px;
 }
@@ -448,9 +453,6 @@ body {
     padding-bottom: 60px;
 }
 
-.logo-studio {
-    color: var(--secondary-text-color);
-}
 .footer-address {
     margin-top: 20px;
     font-style: normal;
