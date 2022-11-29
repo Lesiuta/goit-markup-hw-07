@@ -55,7 +55,7 @@ body {
     clip-path: inset(50%);
     margin: -1px;
 }
-.work-title,
+.work__title,
 .team-title,
 .clients-title {
     color: var(--title-text-color);
@@ -73,10 +73,10 @@ body {
     font-size: 26px;
     line-height: 1.2;
 }
-.logo-web {
+.logo__web {
     color: var(--accent-color);
 }
-.logo-studio {
+.logo__studio {
     color: var(--secondary-text-color);
 }
 .page-header {
@@ -230,15 +230,18 @@ body {
 .work {
     padding-top: 0;
 }
-.picture {
+.work-content__item:not(:last-child) {
+    margin-right: 30px;
+}
+.work-card {
+    position: relative;
+}
+.work-card__image {
     display: block;
     width: 100%;
     height: auto;
 }
-.signature-picture {
-    position: relative;
-}
-.block-picture {
+.work-card__block {
     position: absolute;
     bottom: 0;
     content: "";
@@ -249,18 +252,14 @@ body {
     height: 70px;
     background-color: rgba(47, 48, 58, 0.8);
 }
-.title-picture {
+.work-card__title {
     text-align: center;
     font-size: 14px;
     letter-spacing: 0.03em;
     line-height: 1.1;
     color: var(--secondary-text-color);
+}
 
-}
-.work-item .item:not(:last-child),
-.workers .item:not(:last-child) {
-    margin-right: 30px;
-}
 .team {
     background-color: 
     var(--section-background-color);
@@ -271,6 +270,9 @@ body {
     box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.workers .item:not(:last-child) {
+    margin-right: 30px;
 }
 .workers-title {
     margin-top: 30px;
