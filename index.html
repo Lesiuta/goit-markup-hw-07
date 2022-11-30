@@ -370,15 +370,17 @@
       <label class="textarea__title" for="coment">Коментар</label>
     <textarea class="textarea__field" name="comentar" id="coment" placeholder="Введіть текст"></textarea></div>
 
-    <label class="checkbox-label" for="confirmation">
-      <input class="checkbox-input visually-hidden" type="checkbox" name="confirmation" id="confirmation">
-      <svg class="checkbox-icon-uncheked" width="16px" height="15px">
+    <label class="confirmation" for="confirmation">
+      <input class="confirmation__input visually-hidden" type="checkbox" name="confirmation" id="confirmation">
+      <svg class="confirmation__icon-uncheked" width="16px" height="15px">
       <use href="./images/icons.svg#icon-square"></use></svg>
      
-      <svg class="checkbox-icon-cheked" width="16px" height="15px">
+      <svg class="confirmation__icon-cheked" width="16px" height="15px">
       <use href="./images/icons.svg#icon-white"></use>
       </svg>
-      <span class="checkbox-text">Погоджуюся з розсилкою та приймаю <a class="checkbox-href" href="">Умови договору</a></span>
+
+      <span class="confirmation__text">Погоджуюся з розсилкою та приймаю 
+      <a class="confirmation__link" href="">Умови договору</a></span>
     </label>
     <button type="submit" class="feedback-form__button">Відправити</button>
   </form>

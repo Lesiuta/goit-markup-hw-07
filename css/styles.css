@@ -708,7 +708,7 @@ border-color: var(--accent-color);
     background-color: #188CE8;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
-.checkbox-label {
+.confirmation {
     position: relative;
     display: flex;
     justify-content: center;
@@ -722,31 +722,31 @@ border-color: var(--accent-color);
     margin-right: 11px;
     cursor: pointer;
 }
-.checkbox-icon-cheked {
-    opacity: 0; 
-}
-.checkbox-input:checked:focus~.checkbox-icon-cheked {
+.confirmation__input:checked:focus~.confirmation__icon-cheked {
     opacity: 1;
     fill: var(--secondary-text-color);
     background-color: var(--accent-color);
     border-radius: 2px;
     padding: 1px;
 }
-.checkbox-input:checked:focus~.checkbox-icon-uncheked {
+.confirmation__icon-cheked:focus~.confirmation__icon-uncheked {
     opacity: 0;
 }
-.checkbox-icon-uncheked,
-.checkbox-icon-cheked {
+.confirmation__icon-cheked {
+    opacity: 0;
+}
+.confirmation__icon-uncheked,
+.confirmation__icon-cheked {
     position: absolute;
     left: 0;
     transition-property: opacity;
     transition-duration: var(--time);
     transition-timing-function: var(--timing-function);
 }
-.checkbox-text {
+.confirmation__text {
     margin-left: 8px;
 }
-.checkbox-href {
+.confirmation__link {
     color: var(--accent-color);
 }
 
