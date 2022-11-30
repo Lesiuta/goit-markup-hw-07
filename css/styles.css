@@ -347,17 +347,19 @@ body {
     fill: var(--accent-color);
 }
 
-.items-content {
+
+
+.list-buttons {
     margin-bottom: 34px;
     justify-content: center;
 }
-.items-content .item {
+.list-buttons__item {
   background-color: #F5F4FA; 
 }
-.items-content .item:not(:last-child) {
+.list-buttons__item:not(:last-child) {
     margin-right: 8px;
 }
-.list-button {
+.button-portfolio__name {
     display: inline-block;
     padding: 6px 22px;
     border: transparent;
@@ -374,36 +376,39 @@ body {
     transition-duration: var(--time);
     transition-timing-function: var(--timing-function);
 }
-.list-button:hover,
-.list-button:focus {
+.button-portfolio__name:hover,
+.button-portfolio__name:focus {
     color: var(--secondary-text-color);
     background-color: var(--accent-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
         0px 1px 2px rgba(0, 0, 0, 0.08),
         0px 2px 2px rgba(0, 0, 0, 0.12);
 }
-.content {
+.cards-portfolio {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
 }
-.content .item {
+.cards-portfolio__item {
     flex-basis: calc((100% - 60px) / 3);
     background-color: #ffffff;
     transition-property: box-shadow;
     transition-duration: var(--time);
     transition-timing-function: var(--timing-function);
 }
-.content .item:hover {
+.cards-portfolio__item:hover {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
         0px 4px 4px rgba(0, 0, 0, 0.06),
         1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-.overlay {
+.content-link {
+    text-decoration: var(--primary-text-decoration);
+}
+.resource {
     position: relative;
     overflow: hidden;
 }
-.paragraf-overlay {
+.resource__paragraf {
     background-color: rgba(33, 150, 243, 0.9);
     color: var(--secondary-text-color);
     position: absolute;
@@ -414,36 +419,36 @@ body {
     transition-duration: var(--time);
     transition-timing-function: var(--timing-function); 
 }
-.text-overlay {
+.resource__text {
     padding: 63px 24px;
     letter-spacing: 0.03em;
     font-weight: 400;
     font-size: 18px;
     line-height: 1.6;
 }
-.content-link:hover .paragraf-overlay {
+.content-link:hover .resource__paragraf {
     transform: translateY(0);
 }
-.content-link {
-    text-decoration: var(--primary-text-decoration);
-}
-.bottom-content {
+
+.project {
     padding: 20px 24px;
     border: 1px solid #EEEEEE;
     border-top: none;
 }
-.content-title {
+.project__title {
     color: var(--title-text-color);
     letter-spacing: 0.06em;
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
 }
-.content-text {
+.project__name {
     color: var(--primary-text-color);
     font-size: 16px;
     line-height: 1.9;
 }
+
+
 .footer {
     background-color: var(--secondary-background-color);
     padding-top: 60px;
