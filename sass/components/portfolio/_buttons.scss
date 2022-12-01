@@ -1,0 +1,39 @@
+.list-buttons {
+    margin-bottom: 34px;
+    justify-content: center;
+}
+
+.list-buttons__item {
+    background-color: #F5F4FA;
+}
+
+.list-buttons__item:not(:last-child) {
+    margin-right: 8px;
+}
+
+.button-portfolio__name {
+    display: inline-block;
+    padding: 6px 22px;
+    border: transparent;
+    border-radius: 4px;
+    min-width: 73px;
+    color: var(--title-text-color);
+    background-color: var(--rectangle-background-color);
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    cursor: pointer;
+    transition-property: color, background-color, box-shadow;
+    transition-duration: var(--time);
+    transition-timing-function: var(--timing-function);
+}
+
+.button-portfolio__name:hover,
+.button-portfolio__name:focus {
+    color: var(--secondary-text-color);
+    background-color: var(--accent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+        0px 1px 2px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
+}

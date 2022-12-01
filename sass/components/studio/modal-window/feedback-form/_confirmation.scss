@@ -1,0 +1,47 @@
+.confirmation {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    line-height: 1.7;
+    width: 425px;
+    height: 24px;
+    margin-bottom: 30px;
+    margin-left: 12px;
+    margin-right: 11px;
+    cursor: pointer;
+}
+
+.confirmation__input:checked:focus~.confirmation__icon-cheked {
+    opacity: 1;
+    fill: var(--secondary-text-color);
+    background-color: var(--accent-color);
+    border-radius: 2px;
+    padding: 1px;
+}
+
+.confirmation__icon-cheked:focus~.confirmation__icon-uncheked {
+    opacity: 0;
+}
+
+.confirmation__icon-cheked {
+    opacity: 0;
+}
+
+.confirmation__icon-uncheked,
+.confirmation__icon-cheked {
+    position: absolute;
+    left: 0;
+    transition-property: opacity;
+    transition-duration: var(--time);
+    transition-timing-function: var(--timing-function);
+}
+
+.confirmation__text {
+    margin-left: 8px;
+}
+
+.confirmation__link {
+    color: var(--accent-color);
+}
