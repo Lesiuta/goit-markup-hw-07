@@ -29,13 +29,11 @@
     cursor: pointer;
     transition-property: transform;
     transition-duration: 1000ms;
-}
 
-.modal-backdrop.is-hidden .modal {
-    transform: translate(-50%, -50%) scale(0.5);
-}
+ .modal-backdrop.is-hidden & {
+    transform: translate(-50%, -50%) scale(0.5);}
 
-.modal__button {
+&__button {
     position: absolute;
     top: 8px;
     right: 8px;
@@ -49,12 +47,12 @@
     background-color: rgba(255, 255, 255, 1);
 }
 
-.modal__icon-close {
+&__icon-close {
     transition-property: fill;
     transition-duration: var(--time);
     transition-timing-function: var(--timing-function);
-}
 
-.modal__button:hover .modal__icon-close {
-    fill: var(--accent-color);
+ .modal__button:hover & {
+    fill: var(--accent-color);}
+}
 }

@@ -1,25 +1,21 @@
 .company {
     justify-content: center;
-}
 
-.company__item {
+&__item {
     border: 1px solid #AFB1B8;
     border-radius: 4px;
     transition-property: border;
     transition-duration: var(--time);
     transition-timing-function: var(--timing-function);
+
+   &:hover, &:focus {
+    border: 1px solid var(--accent-color);}
+
+   &:not(:last-child) {
+    margin-right: 30px;}
 }
 
-.company__item:hover,
-.company__item:focus {
-    border: 1px solid var(--accent-color);
-}
-
-.company__item:not(:last-child) {
-    margin-right: 30px;
-}
-
-.company__link {
+&__link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -28,9 +24,8 @@
     transition-property: fill;
     transition-duration: var(--time);
     transition-timing-function: var(--timing-function);
-}
 
-.company__link:hover,
-.company__link:focus {
-    fill: var(--accent-color);
+   &:hover, &:focus {
+    fill: var(--accent-color);}
+}
 }

@@ -1,8 +1,7 @@
 .hero {
     background-color: var(--secondary-background-color);
-}
 
-.hero__content {
+&__content {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -15,7 +14,7 @@
         url(../images/image-hero.jpg);
 }
 
-.hero__title {
+&__title {
     width: 696px;
     color: var(--secondary-text-color);
     letter-spacing: 0.06em;
@@ -26,7 +25,7 @@
 
 }
 
-.hero__button {
+&__button {
     display: inline-block;
     padding: 10px 32px;
     border: transparent;
@@ -44,9 +43,8 @@
     transition-property: background-color;
     transition-duration: var(--time);
     transition-timing-function: var(--timing-function);
-}
 
-.hero__button:focus,
-.hero__button:hover {
-    background-color: #188CE8;
+&:focus, &:hover {
+    background-color: #188CE8;}
+}
 }

@@ -11,37 +11,36 @@
     margin-left: 12px;
     margin-right: 11px;
     cursor: pointer;
-}
 
-.confirmation__input:checked:focus~.confirmation__icon-cheked {
-    opacity: 1;
-    fill: var(--secondary-text-color);
-    background-color: var(--accent-color);
-    border-radius: 2px;
-    padding: 1px;
-}
-
-.confirmation__icon-cheked:focus~.confirmation__icon-uncheked {
+&__icon-cheked {
     opacity: 0;
-}
-
-.confirmation__icon-cheked {
-    opacity: 0;
-}
-
-.confirmation__icon-uncheked,
-.confirmation__icon-cheked {
     position: absolute;
     left: 0;
     transition-property: opacity;
     transition-duration: var(--time);
     transition-timing-function: var(--timing-function);
+ .confirmation__input:checked:focus ~ & {
+    opacity: 1;
+    fill: var(--secondary-text-color);
+    background-color: var(--accent-color);
+    border-radius: 2px;
+    padding: 1px;}
 }
 
-.confirmation__text {
+&__icon-uncheked {
+    position: absolute;
+    left: 0;
+    transition-property: opacity;
+    transition-duration: var(--time);
+    transition-timing-function: var(--timing-function);
+ .confirmation__icon-cheked:focus ~ & {
+    opacity: 0;}
+}
+
+&__text {
     margin-left: 8px;
 }
 
-.confirmation__link {
-    color: var(--accent-color);
+&__link {
+    color: var(--accent-color);}
 }

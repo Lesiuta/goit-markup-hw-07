@@ -1,9 +1,8 @@
 .mailing {
     width: 570px;
     margin-left: 23px;
-}
 
-.mailing__title {
+&__title {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.1;
@@ -11,9 +10,8 @@
     margin-bottom: 20px;
     margin-top: 12px;
 }
-
-.mailing__field {
-    display: flex;
+&__field {
+    display: flex;}
 }
 
 .input-field {
@@ -25,21 +23,19 @@
     padding-top: 15px;
     padding-bottom: 15px;
     padding-left: 16px;
-}
 
-.input-field ::placeholder {
+ & ::placeholder {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.3;
     letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
+    color: rgba(255, 255, 255, 0.6);}
 }
 
 .subscription-field {
     position: relative;
-}
 
-.subscription-field__button {
+&__button {
     display: inline-block;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -56,10 +52,9 @@
     border-radius: 4px;
     margin-left: 12px;
 }
-
-.subscription-field__icon {
+&__icon {
     position: absolute;
     top: 50%;
     right: 30px;
-    transform: translateY(-50%);
+    transform: translateY(-50%);}
 }
